@@ -1,0 +1,69 @@
+                   Output
+-----------------------------------------
+
+   0   PUSHI       2
+   1    POPM    5000
+   2   PUSHI       3
+   3    POPM    5001
+   4   PUSHM    5000
+   5   PUSHM    5001
+   6     ADD
+   7    POPM    5002
+   8   PUSHM    5001
+   9   PUSHM    5000
+  10     SUB
+  11    POPM    5002
+  12   PUSHM    5002
+  13   PUSHM    5002
+  14     MUL
+  15    POPM    5002
+  16   PUSHM    5001
+  17   PUSHM    5000
+  18     DIV
+  19    POPM    5002
+  20   PUSHM    5002
+  21   PUSHM    5001
+  22     GRT
+  23   JUMPZ      26
+  24   PUSHM    5000
+  25    POPM    5002
+  26   PUSHM    5001
+  27    POPM    5002
+  28   PUSHM    5000
+  29   PUSHM    5001
+  30     LES
+  31   JUMPZ      34
+  32   PUSHM    5000
+  33    POPM    5002
+  34   PUSHM    5001
+  35    POPM    5002
+  36   LABEL
+  37   PUSHM    5000
+  38   PUSHM    5001
+  39     GRT
+  40   JUMPZ      44
+  41   PUSHM    5000
+  42    POPM    5002
+  43    JUMP      36
+  44   LABEL
+  45   PUSHM    5000
+  46   PUSHM    5001
+  47     LES
+  48   JUMPZ      52
+  49   PUSHM    5001
+  50    POPM    5002
+  51    JUMP      44
+
+                Symbol Table
+-----------------------------------------
+Identifier     MemoryLocation        Type
+   num1            5000           integer
+   num2            5001           integer
+  large            5002           integer
+     n1            5003             float
+     n2            5004             float
+      l            5005             float
+    nu1            5006              bool
+    nu2            5007              bool
+     la            5008              bool
+Finished.
